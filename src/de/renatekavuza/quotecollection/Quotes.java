@@ -1,3 +1,4 @@
+package de.renatekavuza.quotecollection;
 
 public class Quotes {
 
@@ -5,16 +6,16 @@ public class Quotes {
 	private String txt;
 	private String author;
 	private String religion;
-	
+
 	public Quotes(String theme, String txt, String author, String religion) {
 		this.theme = theme;
 		this.txt = txt;
 		this.author = author;
 		this.religion = religion;
-		
+
 		this.Cite();
 	}
-	
+
 	public void Cite() {
 		System.out.println(theme.toUpperCase() + ":");
 		System.out.println(txt);
@@ -22,38 +23,35 @@ public class Quotes {
 		System.out.println(" (" + religion + ")");
 	}
 
-	public String gettheme() {
+	public String getTheme() {
 		return theme;
 	}
 
-	public void settheme(String theme) {
+	public void setTheme(String theme) {
 		this.theme = theme;
 	}
 
-	public String getxt() {
+	public String getTxt() {
 		return txt;
 	}
 
-	public void settxt(String txt) {
+	public void setTxt(String txt) {
 		this.txt = txt;
 	}
 
-	public String getauthor() {
+	public String getAuthor() {
 		return author;
 	}
 
-	public void setauthor(String author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 
-	public String getreligion() {
+	public String getReligion() {
 		return religion;
 	}
 
-	public void setreligion(String religion) {
+	public void setReligion(String religion) {
 		this.religion = religion;
 	}
-	
-
 }
-
